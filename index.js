@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 function telechargerFichier() {
   const lien = document.createElement("a");
   lien.href = "./assets/doc/CV_Brandon.pdf";
-  lien.download = "CV_Brandon";
+  lien.download = "CV_Moreau_Brandon";
   document.body.appendChild(lien);
   lien.click();
   document.body.removeChild(lien);
