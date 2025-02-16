@@ -1,15 +1,27 @@
 let lastScroll = 0;
 const navbar = document.getElementById("navbar"); // Utilisation directe de l'id
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY < lastScroll) {
-    navbar.style.top = 0;
-  } else {
-    navbar.style.top = "-68px";
-  }
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY < lastScroll) {
+//     navbar.style.top = 0;
+//   } else {
+//     navbar.style.top = "-68px";
+//   }
 
-  lastScroll = window.scrollY;
-});
+//   lastScroll = window.scrollY;
+// });
+
+if (window.innerWidth > 992) {
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    if (window.scrollY < lastScroll) {
+      navbar.style.top = 0;
+    } else {
+      navbar.style.top = "-68px";
+    }
+    lastScroll = window.scrollY;
+  });
+}
 
 function telechargerFichier() {
   const lien = document.createElement("a");

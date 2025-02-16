@@ -147,6 +147,7 @@ button:hover {
 h2 {
   color: rgb(255, 255, 255);
   margin-left: 15px;
+  font-size: 2.5rem;
 }
 .skills,
 .projects {
@@ -477,11 +478,16 @@ footer a:hover {
 
 /* 💻 Tablettes (paysage) et petits laptops */
 @media (max-width: 992px) {
-  header nav {
-    display: none;
+  header {
+    position: static;
+    top: auto;
   }
   header:first-child {
     justify-content: center;
+    font-size: 2rem;
+  }
+  header nav {
+    display: none;
   }
   .contact-container {
     grid-template-columns: none;
